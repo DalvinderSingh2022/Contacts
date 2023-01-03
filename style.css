@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: aquamarine;
+}
+
+::-webkit-scrollbar{
+  background: #fff;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: aquamarine;
+  border-radius: 10px;
+}
+
+.container {
+  width: 24em;
+  height: 28em;
+  padding:1.5em 1em;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-form input {
+  margin: 0 8px;
+}
+
+.container .list-container{
+  padding: 0 1em;
+  margin: 1em 0;
+  overflow: auto;
+  gap: 0.5em;
+  height: calc(100% - 3em);
+  justify-content: flex-start;
+}
+
+.list-container .card {
+  width: calc(100% - 2em);
+  background: aquamarine;
+  padding: 0.5em 1em calc(0.5em - 4px);
+  border-radius: 4px;
+  transition: .1s ease-in-out;
+}
+
+.list-container .card button {
+  background: #fff;
+}
+
+.list-container .card span {
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 20px;
+  margin: 0 0 4px;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  width: calc(100% - 2em);
+  height: calc(100% - 2em);
+  margin: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0px rgb(210 210 210);
+}
+
+.overlay .group {
+  margin-bottom: 1em;
+  gap: 0.5em;
+}
+
+.overlay input {
+  border-radius: 4px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex.between {
+  justify-content: space-between;
+}
+
+.flex.around {
+  justify-content: space-around;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.start {
+  align-items: flex-start;
+}
+
+.hide {
+  display: none;
+}
+
+input,
+button {
+  outline: none;
+  border-radius: 50px;
+  font-size: 18px;
+  height: 28px;
+  padding: 4px 8px;
+  cursor: pointer;
+  background: none;
+}
+
+button {
+  border: none;
+  min-width: 40px;
+  height: 40px;
+  background: aquamarine;
+  font-size: 15px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px 0 rgb(127 255 212);
+}
+
+input {
+  width: 100%;
+  border: 1px solid #000;
+  cursor: default;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/style.e308ff8e.css">
+  <script defer="" src="/controller.0b66e5cf.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://kit.fontawesome.com/0606937758.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContactHub</title>
+<script src="/style.e308ff8e.js"></script></head>
+
+<body class="flex ">
+  <!-- form -->
+  <div class="container">
+    <div class="overlay add-contact hide flex center">
+      <form>
+        <div class="group flex column start">
+          <label for="name-input">Name</label>
+          <input type="text" class="name-input">
+        </div>
+        <div class="group flex column start">
+          <label for="phone-input">Phone</label>
+          <input type="number" class="phone-input">
+        </div>
+        <div class="group flex column start">
+          <label for="email-input">Email</label>
+          <input type="email" class="email-input">
+        </div>
+        <div class="group flex start">
+          <button type="submit"><i class="fa-solid fa-floppy-disk"></i></button>
+          <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </form>
+    </div>
+
+    <!-- search -->
+    <form class="search-form flex between">
+      <button class="add-btn"><i class="fa-solid fa-user-plus"></i></button>
+      <input type="text" class="search-input">
+      <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="clear hide"><i class="fa-solid fa-xmark"></i></button>
+    </form>
+    <div class="list-container flex column"></div>
+  </div>
+  
+</body>
+
+</html>
